@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🚀 User Management App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Project Overview
 
-## Available Scripts
+This is a User Management Web Application built using React.
+It allows users to view, add, edit, and delete user data with a clean and responsive interface.
 
-In the project directory, you can run:
+The app integrates with a public API and uses local storage to manage user data.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌐 Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 https://your-vercel-link.vercel.app
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 GitHub Repository
 
-### `npm run build`
+🔗 https://github.com/YOUR_USERNAME/user-management-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ Core Features
 
-### `npm run eject`
+* Fetch users from public API using Axios
+* Display user list (Name, Email, Phone)
+* Add new user
+* Edit existing user
+* Delete user
+* Client-side routing using React Router
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ⭐ Additional Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* LocalStorage integration (data persists after refresh)
+* Reusable UserForm component
+* Navigation bar for easy routing
+* Clean and responsive UI with CSS styling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🚀 Bonus (if added)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Search users by name or email
+* Improved UI styling
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠 Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* React.js
+* Axios
+* React Router DOM
+* CSS
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ⚙️ Setup Instructions
 
-### Analyzing the Bundle Size
+Follow these steps to run the project locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1️⃣ Clone the repository
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/YOUR_USERNAME/user-management-app.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 2️⃣ Navigate to project folder
 
-### Advanced Configuration
+```bash
+cd user-management-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 3️⃣ Install dependencies
 
-### Deployment
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 4️⃣ Run the application
 
-### `npm run build` fails to minify
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👉 The app will run at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+ ├── components/
+ │    ├── Navbar.js
+ │    └── UserForm.js
+ ├── pages/
+ │    ├── Users.js
+ │    ├── AddUser.js
+ │    └── EditUser.js
+ ├── services/
+ │    └── api.js
+ ├── styles.css
+ ├── App.js
+ └── index.js
+```
+
+---
+
+## 🎯 Key Highlights
+
+* Modular and reusable components
+* Clean folder structure
+* Proper state management using React Hooks
+* Efficient API handling with Axios
+
+---
+
+## 📧 Author
+
+**Your Name**
+Frontend Developer Candidate
+
+---
+
+## 🙌 Acknowledgement
+
+Thanks to the opportunity provided to build this project as part of the frontend developer evaluation.
