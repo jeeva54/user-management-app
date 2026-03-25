@@ -110,6 +110,24 @@ src/
 ```
 
 ---
+## 🚀 Future Improvements
+
+- 🔍 Add advanced search and filtering options (by name, email, etc.)
+- 📄 Implement pagination for better handling of large datasets
+- 🔔 Add toast notifications for user actions (Add/Edit/Delete)
+- 🎨 Improve UI using modern frameworks like Tailwind CSS or Material UI
+- 🔐 Add authentication (login/signup) for secure access
+- 🌐 Connect to a real backend (Node.js + MongoDB) instead of localStorage
+- 📱 Make the application fully responsive for mobile devices
+- ⚡ Add loading spinners and better error handling for API calls
+
+## 📝 Additional Notes
+
+- This project uses a public API (JSONPlaceholder) for fetching user data.
+- CRUD operations (Add, Edit, Delete) are handled locally using browser localStorage.
+- The application is built using functional components and React Hooks.
+- Focus has been given to clean code structure, reusability, and simplicity.
+- The project demonstrates core frontend development skills required for a MERN stack role.
 
 ## 🎯 Key Highlights
 
