@@ -11,13 +11,13 @@ The app integrates with a public API and uses local storage to manage user data.
 
 ## 🌐 Live Demo
 
-🔗 https://your-vercel-link.vercel.app
+🔗 https://vercel.com/jeevananthams-projects-8dd4a0d0/user-management-app
 
 ---
 
 ## 📂 GitHub Repository
 
-🔗 https://github.com/YOUR_USERNAME/user-management-app
+🔗 https://github.com/jeeva54/user-management-app.git
 
 ---
 
@@ -62,7 +62,7 @@ Follow these steps to run the project locally:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/user-management-app.git
+git clone https://github.com/jeeva54/user-management-app.git
 ```
 
 ### 2️⃣ Navigate to project folder
