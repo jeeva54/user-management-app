@@ -3,10 +3,11 @@ import { getUsers } from "../services/api";
 import { useNavigate } from "react-router-dom";
 
 function Users() {
+  const [search, setSearch] = useState("");
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
 
-  // ✅ Fetch users from API + LocalStorage
+  // ✅ Fetch users
   useEffect(() => {
     getUsers()
       .then((res) => {
@@ -19,41 +20,50 @@ function Users() {
 
   // ✅ Delete User
   const deleteUser = (id) => {
-    // Remove from UI
     const updatedUsers = users.filter((user) => user.id !== id);
     setUsers(updatedUsers);
 
-    // Remove from localStorage
     const localUsers = JSON.parse(localStorage.getItem("users")) || [];
     const newLocalUsers = localUsers.filter((user) => user.id !== id);
     localStorage.setItem("users", JSON.stringify(newLocalUsers));
   };
 
+  // ✅ Filter users
+  const filteredUsers = users.filter(
+    (u) =>
+      u.name.toLowerCase().includes(search.toLowerCase()) ||
+      u.email.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
-    <div>
+    <div className="container">
       <h2>User List</h2>
 
-      {/* ✅ Add User Button */}
-      <button onClick={() => navigate("/add-user")}>
+      {/* ✅ Search Input */}
+      <input
+        className="search-input"
+        placeholder="Search users..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      {/* ✅ Add Button */}
+      <button
+        className="add-btn"
+        onClick={() => navigate("/add-user")}
+      >
         Add User
       </button>
 
       {/* ✅ User List */}
-      {users.map((user) => (
-        <div
-          key={user.id}
-          style={{
-            border: "1px solid gray",
-            margin: "10px",
-            padding: "10px",
-          }}
-        >
+      {filteredUsers.map((user) => (
+        <div key={user.id} className="card">
           <p><b>Name:</b> {user.name}</p>
           <p><b>Email:</b> {user.email}</p>
           <p><b>Phone:</b> {user.phone}</p>
 
-          {/* ✅ Edit Button */}
           <button
+            className="edit-btn"
             onClick={() =>
               navigate(`/edit-user/${user.id}`, { state: user })
             }
@@ -61,8 +71,10 @@ function Users() {
             Edit
           </button>
 
-          {/* ✅ Delete Button */}
-          <button onClick={() => deleteUser(user.id)}>
+          <button
+            className="delete-btn"
+            onClick={() => deleteUser(user.id)}
+          >
             Delete
           </button>
         </div>
