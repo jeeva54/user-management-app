@@ -1,0 +1,124 @@
+/* 🌐 Premium Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* 📦 Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* 🧭 Glass Navbar */
+nav {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h2 {
+  color: #fff;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00f2fe;
+}
+
+/* 🧾 Glass Card */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+}
+
+/* 📝 Headings */
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 8px 14px;
+  margin: 8px 5px 0 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+/* Button colors */
+.add-btn {
+  background: linear-gradient(45deg, #00c853, #64dd17);
+  color: white;
+}
+
+.edit-btn {
+  background: linear-gradient(45deg, #2979ff, #00b0ff);
+  color: white;
+}
+
+.delete-btn {
+  background: linear-gradient(45deg, #d50000, #ff1744);
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* 🧾 Form */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🧾 Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* 🔍 Search */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+}
