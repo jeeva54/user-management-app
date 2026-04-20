@@ -11,13 +11,12 @@ The application integrates with a public API and uses localStorage for persisten
 
 ## 🌐 Live Demo
 
-🔗 https://your-vercel-link.vercel.app
-
+🔗 https://vercel.com/jeevananthams-projects-8dd4a0d0/user-management-app
 ---
 
 ## 📂 GitHub Repository
 
-🔗 https://github.com/YOUR_USERNAME/user-management-app
+🔗 https://github.com/jeeva54/user-management-app
 
 ---
 
@@ -63,7 +62,7 @@ The application integrates with a public API and uses localStorage for persisten
 
 ### 1️⃣ Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/user-management-app.git
+git clone https://github.com/jeeva54/user-management-app
 
 ### 2️⃣ Navigate to project folder
 
